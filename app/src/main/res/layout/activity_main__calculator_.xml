@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Operacoes"
+    android:background="@color/marrom"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:id="@+id/text_res_id"
+        android:textSize="80sp"
+        android:gravity="right"
+        android:background="@color/marrom"
+        android:textColor="@color/branco"
+        android:onClick="addValue"
+
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/id_C_tap"
+        android:textSize="40sp"
+        android:layout_margin="0.5dp"
+        android:gravity="left"
+        android:background="@color/cinza"
+        android:textColor="@color/marrom"
+        android:padding="10dp"
+        android:layout_weight="1.04"
+        android:textAlignment="center"
+        android:onClick="clear"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+/_"
+        android:id="@+id/id_plus_minus_tap"
+        android:textSize="40dp"
+        android:background="@color/cinza"
+        android:textColor="@color/marrom"
+        android:padding="10dp"
+        android:layout_weight="0.35"
+        android:textAlignment="center"
+        android:layout_margin="0.5dp"
+        android:onClick="operation"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:id="@+id/id_percent_tap"
+        android:textSize="40dp"
+        android:background="@color/cinza"
+        android:textColor="@color/marrom"
+        android:padding="10dp"
+        android:layout_weight="0.98"
+        android:textAlignment="center"
+        android:layout_margin="0.5dp"
+        android:onClick="operation"
+        />
+
+    <TextView
+        android:id="@+id/id_division_tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"
+        android:layout_weight="1.18"
+        android:background="@color/laranja"
+        android:onClick="operation"
+        android:padding="10dp"
+        android:text="÷"
+        android:textAlignment="center"
+        android:textColor="@color/marrom"
+        android:textSize="40dp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:id="@+id/id_seven_tap"
+            android:textSize="40sp"
+            android:gravity="left"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="addValue"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/id_eight_tap"
+            android:textSize="40sp"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="0.98"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="addValue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/id_nine_tap"
+            android:textSize="40sp"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="0.99"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="addValue"
+            />
+
+        <TextView
+            android:id="@+id/id_multiplication_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1.10"
+            android:background="@color/laranja"
+            android:onClick="operation"
+            android:padding="10dp"
+            android:text="x"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_four_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="0.91"
+            android:background="@color/cinza"
+            android:gravity="left"
+            android:onClick="addValue"
+            android:padding="10dp"
+            android:text="4"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/id_five_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="0.89"
+            android:background="@color/cinza"
+            android:onClick="addValue"
+            android:padding="10dp"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/id_plus_six_tap"
+            android:textSize="40sp"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="0.9"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="addValue"
+            />
+
+        <TextView
+            android:id="@+id/id_sic_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1.15"
+            android:background="@color/laranja"
+            android:onClick="operation"
+            android:padding="10dp"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_one_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1.02"
+            android:background="@color/cinza"
+            android:gravity="left"
+            android:onClick="addValue"
+            android:padding="10dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#251a1a"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/id_two_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/cinza"
+            android:onClick="addValue"
+            android:padding="10dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/id_three_tap"
+            android:textSize="40sp"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="1.03"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="addValue"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/id_plus_tap"
+            android:textSize="40sp"
+            android:background="@color/laranja"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="1.05"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="operation"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/id_zero_tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0.5dp"
+            android:layout_weight="2.39"
+            android:background="@color/cinza"
+            android:gravity="left"
+            android:onClick="addValue"
+            android:padding="10dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/marrom"
+            android:textSize="40sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:id="@+id/id_dot_tap"
+            android:textSize="40sp"
+            android:background="@color/cinza"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:layout_weight="1.05"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            android:onClick="operation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:id="@+id/id_equals_tap"
+            android:textSize="40sp"
+            android:background="@color/laranja"
+            android:textColor="@color/marrom"
+            android:padding="10dp"
+            android:onClick="showResult"
+            android:layout_weight="0.89"
+            android:textAlignment="center"
+            android:layout_margin="0.5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
